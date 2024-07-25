@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: jm-backstage-product-service
+  description: Service for managing products
+  tags:
+    - product
+    - service
+  annotations:
+    github.com/project-slug: aquijun/jm-backstage-product-service
+spec:
+  type: service
+  owner: team-ecommerce
+  lifecycle: experimental
+  repository: https://github.com/aquijun/jm-backstage-product-service.git
+  providesApis:
+    - product-api
+  dependsOn:
+    - reosurce: postgres-db
