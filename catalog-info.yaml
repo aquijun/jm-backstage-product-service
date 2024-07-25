@@ -44,3 +44,15 @@ spec:
           responses:
             '200':
               description: Successful response
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: postgres-db
+  description: The postgres db with data stored for the app.
+spec:
+  type: postgresdb
+  owner: team-ecommerce
+  system: sample-system
