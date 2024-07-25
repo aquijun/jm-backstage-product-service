@@ -15,5 +15,5 @@ spec:
   repository: https://github.com/aquijun/jm-backstage-product-service.git
   providesApis:
     - product-api
-  dependsOn:
-    - reosurce: postgres-db
+  # dependsOn:
+  #   - reosurce: postgres-db
